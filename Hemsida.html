@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Minhemsida</title>
+    <link rel="stylesheet" href="Hemsidastyle.css" />
+    <link rel="shortcut icon" href="Hasbull head.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/be66090fe2.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+
+<body>
+  
+  <div class="intro">
+    <img class="introbild" src="https://www.letribunaldunet.fr/wp-content/uploads/2021/06/habulla-magomedo-combat-videos.jpeg" alt="hasbulla">
+  </div>
+
+
+  <div class="glow"> <h1> Hej </h1> </div>
+
+  <div class="nav">
+    <a href="Hemsida.html"><i class="fa-solid fa-house"></i> Hem</a>
+    <a href="https://www.mcdonalds.com/se/sv-se.html"><i class="fa-solid fa-burger"></i> 2</a>
+    <a style="float:right;" href=".html"><i class="fa-solid fa-hand-fist"></i> About</a>
+  </div>
+
+
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img class="storbild" id="expandedImg">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+
+
+</div>
+
+<div class="row">
+
+  <div class="column">
+    <img class="bild"  src="https://www.bosshunting.com.au/wp-content/uploads/2022/06/Hasbulla-Magomedov-1200x900.jpg" 
+    width="300" height="150" onclick="myFunction(this);">
+  </div>
+
+  <div class="column">
+    <img class="bild"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQarUBqtqU26JRwJHImq-E1lvHCWd1dtxfO8A&usqp=CAU" 
+    width="300" height="150" onclick="myFunction(this);">
+  </div>
+
+  <div class="column">
+    <img class="bild"  src="https://www.mansworldindia.com/wp-content/uploads/2022/06/Hasbulla.jpg" 
+    width="300" height="150" onclick="myFunction(this);">
+  </div>
+
+  <div class="column">
+    <img class="bild" src="https://editors.dexerto.com/wp-content/uploads/2021/06/03/Who-is-Hasbulla-The-Mini-Khabib-who-taking-over-TikTok.jpg" 
+    width="300" height="150" onclick="myFunction(this);">
+  </div>
+
+</div>
+
+<p style="padding-top: 1000px;"> hej </p>
+
+</body>
+
+
+<script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>
+
+
+
+</html>
