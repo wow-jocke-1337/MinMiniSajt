@@ -1,12 +1,12 @@
 body {
-    background-image: linear-gradient(to bottom right, rgb(40, 26, 26), rgb(121, 5, 5) )
+    background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(20, 20, 20) )
   }
   
   .nav {
       position: sticky;
       top: 0px;
       overflow: hidden;
-      background-color: rgba(112, 35, 35, 0.534);
+      background-color: rgba(89, 89, 89, 0.807);
       
     }
   
