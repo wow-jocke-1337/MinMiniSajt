@@ -1,171 +1,171 @@
 body {
-    background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(20, 20, 20) )
-  }
-  
-  .nav {
-      position: sticky;
-      top: 0px;
-      overflow: hidden;
-      background-color: rgba(89, 89, 89, 0.807);
-      
-    }
-  
-  .nav a{
-      float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 1.8% 1.8%;
-      text-decoration: dashed;
-      transition: all 2s;
-      
-    }
-    
-  .nav a:hover {
-      background-color: #ddd;
-      color: black;
-      padding: 2% 4%;
-  }
-  
-  
-  h1 {
-    position: static;
-    text-align: center;
-    font-size: 6vw;
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: solid,#333, 10%;
-  }
-  
-  
-  .intro{
-    position: static;
-    top: 20%;
+  background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(20, 20, 20) )
+}
+
+.nav {
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    background-color: rgb(89, 89, 89);
     
   }
-  .intro :active{
-    animation: rotera 1s infinite linear;
-  }
-  
-  .introbild{
-    width: 25%;
-    border-radius: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 10px solid rgba(40, 1, 24, 0.547);
-    padding: 0px;
-    position: static;
-    top: 20;
-  }
-    
-  @keyframes rotera {
-    from {
-       transform: rotate(0deg);
-     }
-    to {
-      transform: rotate(359deg);
-     }
-  }
-    
-  
-  .glow {
-    color: rgb(58, 2, 2);
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-  
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  }
-  
-  .column {
-    position: relative;
+
+.nav a{
     float: left;
-    width: 12%;
-    padding: 5%;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.8% 1.8%;
+    text-decoration: dashed;
+    transition: all 2s;
+    
   }
   
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8;
-    cursor: pointer;
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+    padding: 2% 4%;
+}
+
+
+h1 {
+  position: static;
+  text-align: center;
+  font-size: 6vw;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: solid,#333, 10%;
+}
+
+
+.intro{
+  position: static;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+.intro :hover{
+  animation: rotera 0.1s infinite linear;
+}
+
+.introbild{
+  width: 25%;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid rgb(0, 0, 0);
+  padding: 0px;
+  position: static;
+  top: 20;
+}
+  
+@keyframes rotera {
+  from {
+      transform: rotate(0deg);
+    }
+  to {
+    transform: rotate(359deg);
+    }
+}
+  
+
+.glow {
+  color: rgb(58, 2, 2);
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
-  
-  .column img:hover {
-    opacity: 1;
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
-  
-  .row {
-    position: relative;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container (positioning is needed to position the close button and the text) */
-  .container {
-    position: relative;
-    display: none;
-  }
-  
-  /* Expanding image text "måste ha kvar den här för någon anledning annars fungerar inte det att klicka på bilderna"*/
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Closable button inside the image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-  }
-  
-  
-  .storbild {
-    position: relative;
-    padding-top: 3%;
-    left: 18%;
-    width: 62vw;
-    height: 50%;
-    max-height: 78vh;
-  }
-  
+}
+
+.column {
+  position: relative;
+  float: left;
+  width: 12%;
+  padding: 5%;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row {
+  position: relative;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text "måste ha kvar den här för någon anledning annars fungerar inte det att klicka på bilderna"*/
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+.storbild {
+  position: relative;
+  padding-top: 3%;
+  left: 18%;
+  width: 62vw;
+  height: 50%;
+  max-height: 78vh;
+}
+
+.bild{
+  width: 20vw;
+  height: 20%;
+  max-height: 15vh;
+  min-height: 20vh;
+}
+
+@media screen and (max-width: 600px) {
   .bild{
-    width: 20vw;
-    height: 20%;
-    max-height: 15vh;
-    min-height: 20vh;
+    min-height: 100px;
+    max-height: 100px;
   }
-  
-  @media screen and (max-width: 600px) {
-    .bild{
-      min-height: 100px;
-      max-height: 100px;
-    }
-    .storbild{
-      max-height: 200px;
-    }
-    .column{
-      width: 200px;
-    }
+  .storbild{
+    max-height: 200px;
   }
-  
+  .column{
+    width: 200px;
+  }
+}
