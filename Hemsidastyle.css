@@ -7,7 +7,7 @@ body {
     top: 0px;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
-    padding: 2% 4%;
+    padding: 4% 6%;
     
   }
 
@@ -16,7 +16,7 @@ body {
     display: block;
     color: #1e1d1d;
     text-align: center;
-    padding: 1.8% 1.8%;
+    padding: 1.2% 1%;
     text-decoration: dashed;
     transition: all 2s;
     
