@@ -7,6 +7,7 @@ body {
     top: 0px;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
+    padding: 2% 4%;
     
   }
 
@@ -17,7 +18,7 @@ body {
     text-align: center;
     padding: 1.8% 1.8%;
     text-decoration: dashed;
-    transition: all 1s;
+    transition: all 2s;
     
   }
   
@@ -26,7 +27,6 @@ body {
     color: rgba(232, 230, 230, 0.927);
     padding: 2% 4%;
 }
-
 
 h1 {
   position: static;
