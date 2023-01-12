@@ -21,11 +21,34 @@ body {
     transition: all 2s;
     
   }
+
+#nav-right{
+  float:right;
+  display: block;
+  color: #1e1d1d;
+  text-align: center;
+  padding: 1.2% 1%;
+  text-decoration: dashed;
+  transition: all 2s;
+}
   
 .nav a:hover {
     background-color: rgba(17, 16, 16, 0.929);
     color: rgba(232, 230, 230, 0.927);
     padding: 2% 4%;
+}
+
+
+#BBClogo{
+  width: 20%;
+  border-radius: 100%;
+  display: block;
+  left: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 0px;
+  position: static;
 }
 
 h1 {
