@@ -2,53 +2,55 @@ body {
   background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(20, 20, 20) )
 }
 
-.nav {
-    position: sticky;
-    top: 0px;
-    overflow: hidden;
+.nav-container{
     background-color: rgb(255, 255, 255);
-    padding: 4% 6%;
-    
+    position: sticky;
+    display: flex;
+    top: 0px;
+    padding: 2% 3%;
+    height: 20vh;
   }
 
-.nav a{
+.nav-container a{
     float: left;
-    display: block;
+    display: flex;
     color: #1e1d1d;
     text-align: center;
-    padding: 1.2% 1%;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 10px;
+    margin: 1% 5px;
     text-decoration: dashed;
     transition: all 2s;
-    
   }
 
 #nav-right{
-  float:right;
-  display: block;
-  color: #1e1d1d;
-  text-align: center;
-  padding: 1.2% 1%;
-  text-decoration: dashed;
-  transition: all 2s;
+  margin-left: auto;
 }
-  
-.nav a:hover {
+
+
+.nav-container a:hover {
     background-color: rgba(17, 16, 16, 0.929);
     color: rgba(232, 230, 230, 0.927);
-    padding: 2% 4%;
+    padding: 2% 1.3%;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto 0;
+  border: 2px solid black;
 }
 
-
 #BBClogo{
-  width: 20%;
+  height: 20vh;
   border-radius: 100%;
-  display: block;
-  left: 30%;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid rgb(0, 0, 0);
-  padding: 0px;
-  position: static;
+  position: absolute;
 }
 
 h1 {
@@ -60,15 +62,15 @@ h1 {
   border: solid,#333, 10%;
 }
 
-
 .intro{
   position: static;
   margin-top: 5%;
   margin-bottom: 5%;
-
 }
+
 .intro :hover{
-  animation: rotera 0.1s infinite linear;
+  animation: rotera 2s infinite linear;
+  transition: all;
 }
 
 .introbild{
