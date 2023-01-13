@@ -44,7 +44,9 @@ body {
 }
 
 #BBClogo{
-  height: 20vh;
+  height: 60%;
+  width: 14%;
+  min-width: 20vh;
   border-radius: 100%;
   display: flex;
   justify-content: center;
