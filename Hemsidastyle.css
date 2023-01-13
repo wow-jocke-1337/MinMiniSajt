@@ -18,11 +18,16 @@ body {
     text-align: center;
     width: fit-content;
     height: fit-content;
-    padding: 10px 10px;
+    padding: 5px 5px;
     margin: 1% 5px;
     text-decoration: dashed;
-    transition: all 2s;
+    transition: all 0.5s;
   }
+
+.nav-container i:hover{
+  width: 100%;
+  height: 100%;
+}
 
 #nav-right{
   margin-left: auto;
@@ -32,7 +37,8 @@ body {
 .nav-container a:hover {
     background-color: rgba(17, 16, 16, 0.929);
     color: rgba(232, 230, 230, 0.927);
-    padding: 2% 1.3%;
+    padding: 10px 10px;
+
 }
 .logo-container {
   display: flex;
