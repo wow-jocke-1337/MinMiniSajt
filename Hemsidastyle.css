@@ -7,8 +7,8 @@ body {
     position: sticky;
     display: flex;
     top: 0px;
-    padding: 2% 3%;
     height: 20vh;
+    padding: 5px 5px;
 
   }
 
@@ -17,10 +17,10 @@ body {
     display: flex;
     color: #1e1d1d;
     text-align: center;
-    width: fit-content;
-    height: fit-content;
+    width: 10px;
+    height: 10px;
     padding: 5px 5px;
-    margin: 1% 5px;
+    margin: 5px 5px;
     text-decoration: dashed;
     transition: all 0.5s;
     border-radius: 50%;
@@ -29,7 +29,7 @@ body {
 .nav-container a:hover {
     background-color: rgba(17, 16, 16, 0.929);
     color: rgba(232, 230, 230, 0.927);
-    padding: 10px 11px;
+    padding: 10px 10px;
     border-radius: 90%;
 }
 .nav-container i{
@@ -39,20 +39,23 @@ body {
 
 #nav-right{
   margin-left: 80%;
+  width: 60px;
+
 }
 #nav-right :hover{
   border-radius: 30%;
 }
 
 #BBClogo{
-  top: 20px;
-  height: 70%;
-  width: 18%;
+  top: 1vh;
+  height: 18vh;
+  width: 20vh;
   min-width: 20vh;
   border-radius: 100%;
-  border: 2px solid rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
   position: absolute;
   margin-left: 38%;
+
 }
 
 h1 {
