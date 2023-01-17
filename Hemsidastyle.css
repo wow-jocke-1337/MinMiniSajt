@@ -37,19 +37,10 @@ body {
 }
 
 #nav-right{
-  margin-left: auto;
+  margin-left: 80%;
 }
-
-
-.logo-container {
-  height: 70%;
-  width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  margin: 0 auto 0;
-  border: 2px solid black;
+#nav-right :hover{
+  border-radius: 30%;
 }
 
 #BBClogo{
@@ -57,11 +48,9 @@ body {
   width: 14%;
   min-width: 20vh;
   border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 2px solid rgb(0, 0, 0);
   position: absolute;
+  margin-left: 39%;
 }
 
 h1 {
