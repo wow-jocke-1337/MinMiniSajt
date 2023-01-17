@@ -14,13 +14,14 @@ body {
 
 .nav-container a{
     float: left;
-    display: flex;
+    display: inline-flex;
     color: #1e1d1d;
     text-align: center;
-    width: 10px;
-    height: 10px;
+    width: 18px;
+    height: 17px;
     padding: 5px 5px;
-    margin: 5px 5px;
+    margin: 2px 10px;
+    margin-top: 10px;
     text-decoration: dashed;
     transition: all 0.5s;
     border-radius: 50%;
@@ -29,41 +30,49 @@ body {
 .nav-container a:hover {
     background-color: rgba(17, 16, 16, 0.929);
     color: rgba(232, 230, 230, 0.927);
-    padding: 10px 10px;
+    width: 25px;
+    height: 25px;
     border-radius: 90%;
-}
-.nav-container i{
-  width: 2vh;
-  height: 2vh;
 }
 
 #nav-right{
-  margin-left: 80%;
+  margin-left: 78%;
   width: 60px;
+  margin-top: 20px;
 
 }
 #nav-right :hover{
   border-radius: 30%;
 }
 
-#BBClogo{
+.nav-buttons-div{
+  width: 70%;
+  height: 50px;
+  padding: 5px;
+  padding-left: 20px;
+  border: 3px solid rgba(100, 98, 98, 0.556);
+}
+
+@media screen and (max-width: 600px) {
+  .nav-buttons-div{
+    
+  }
+
+}
+
+.Logobar{
+  display: block;
+  position: absolute;
+  border: 3px solid rgba(100, 98, 98, 0.556);
+  width: 89%;
+  top: 10vh;
+  margin-left: 5%;
+}
+
+#logoimage{
   width: 23vh;
   top: 1vh;
   position: absolute;
   margin-left: 44%;
 }
 
-
-
-@media screen and (max-width: 600px) {
-  .bild{
-    min-height: 100px;
-    max-height: 100px;
-  }
-  .storbild{
-    max-height: 200px;
-  }
-  .column{
-    width: 200px;
-  }
-}
