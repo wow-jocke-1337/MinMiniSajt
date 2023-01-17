@@ -19,8 +19,8 @@ body {
     text-align: center;
     width: 18px;
     height: 17px;
-    padding: 5px 5px;
-    margin: 2px 10px;
+    padding: 2% 2%;
+    margin: 3% 3%;
     margin-top: 10px;
     text-decoration: dashed;
     transition: all 0.5s;
@@ -36,20 +36,24 @@ body {
 }
 
 #nav-right{
-  margin-left: 78%;
+  margin-left: 90%;
   width: 60px;
-  margin-top: 20px;
-
+  padding: 10px;
+  border-radius: 5%;
 }
+
 #nav-right :hover{
   border-radius: 30%;
+  padding: 30px;
 }
 
 .nav-buttons-div{
-  width: 70%;
-  height: 50px;
+  position: absolute;
+  display: block;
+  width: 18%;
+  margin-left: 5%;
+  height: 25%;
   padding: 5px;
-  padding-left: 20px;
   border: 3px solid rgba(100, 98, 98, 0.556);
 }
 
