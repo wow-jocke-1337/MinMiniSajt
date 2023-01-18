@@ -5,13 +5,13 @@ body {
 
 
 .nav-container{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    position: sticky;
-    top: 0px;
-    height: 20vh;
-    padding: 5px 5px;
-  }
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  position: sticky;
+  top: 0px;
+  height: 20vh;
+  padding: 5px 5px;
+}
 
 .nav-buttons-div{
   position: absolute;
@@ -24,26 +24,29 @@ body {
 }
 
 .nav-buttons-div a{
-    float: left;
-    display: inline-flex;
-    color: #1e1d1d;
-    text-align: center;
-    padding: 5px 6px;
-    margin: 1% 2%;
-    margin-top: 10px;
-    text-decoration: dashed;
-    transition: all 0.5s;
-    border-radius: 47%;
-  }
-
-.nav-container a:hover {
-    background-color: rgba(17, 16, 16, 0.929);
-    color: rgba(232, 230, 230, 0.927);
+  float: left;
+  display: inline-flex;
+  color: #1e1d1d;
+  text-align: center;
+  padding: 5px 6px;
+  margin: 1% 2%;
+  margin-top: 10px;
+  text-decoration: dashed;
+  transition: all 0.5s;
+  border-radius: 47%;
 }
 
-#baricon{
-  font-size: 130%;
+.nav-buttons-div a:hover {
+  background-color: rgba(17, 16, 16, 0.929);
+  color: rgba(232, 230, 230, 0.927);
 }
+
+#nav-right:hover{
+  background-color: rgba(17, 16, 16, 0.929);
+  color: white;
+}
+
+#baricon{ font-size: 130%; }
 
 #nav-right{
   margin-top: 35px;
@@ -55,10 +58,9 @@ body {
   border-radius: 20%;
   padding: 6px 6px;
 }
-#nav-right:hover{
-  background-color: rgba(17, 16, 16, 0.929);
-  color: white;
-}
+
+
+
 
 .dropdown {
   height: 22px;
@@ -95,7 +97,10 @@ body {
   display: block;
 }
 
+
 .show {display:block;}
+
+
 
 
 @media screen and (max-width: 600px) {
@@ -120,6 +125,10 @@ body {
   position: absolute;
   margin-left: 44%;
 }
+
+
+
+
 
 
 
@@ -152,19 +161,22 @@ input[type=text], input[type=password] {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  cursor: pointer;
   width: 100%;
 }
 
-.fromdiv button:hover {
-  opacity: 0.8;
+.formdiv button:hover {
+  cursor: pointer;
+}
+
+.formdiv b:hover{
+  cursor: default;
 }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
-  background-color: #f44336;
+  background-color: #e21f11c9;
 }
 
 /* Center the image and position the close button */
@@ -175,20 +187,22 @@ input[type=text], input[type=password] {
 }
 
 img.avatar {
+  margin-top: 10%;
   width: 40%;
   border-radius: 50%;
 }
 
-.container {
+.formcontainer{
   padding: 16px;
 }
+
+.formdiv label :hover{cursor: default;}
 
 span.psw {
   float: right;
   padding-top: 16px;
 }
 
-/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -208,7 +222,7 @@ span.psw {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 30%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
@@ -218,11 +232,9 @@ span.psw {
   top: 0;
   color: #000;
   font-size: 35px;
-  font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover{
   color: red;
   cursor: pointer;
 }
