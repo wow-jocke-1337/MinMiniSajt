@@ -4,58 +4,52 @@ body {
 
 .nav-container{
     background-color: rgb(255, 255, 255);
-    position: sticky;
     display: flex;
+    position: sticky;
     top: 0px;
     height: 20vh;
     padding: 5px 5px;
 
   }
 
+.nav-buttons-div{
+  position: absolute;
+  display: block;
+  width: 14%;
+  margin-top: 20px;
+  margin-left: 5%;
+  height: 25%;
+  padding: 5px;
+}
+
 .nav-container a{
     float: left;
     display: inline-flex;
     color: #1e1d1d;
     text-align: center;
-    width: 18px;
-    height: 17px;
-    padding: 2% 2%;
-    margin: 3% 3%;
+    padding: 5px 6px;
+    margin: 1% 2%;
     margin-top: 10px;
     text-decoration: dashed;
     transition: all 0.5s;
-    border-radius: 50%;
+    border-radius: 47%;
   }
 
 .nav-container a:hover {
     background-color: rgba(17, 16, 16, 0.929);
     color: rgba(232, 230, 230, 0.927);
-    width: 25px;
-    height: 25px;
-    border-radius: 90%;
+}
+
+#infoicon{
+  font-size: 130%;
 }
 
 #nav-right{
-  margin-left: 90%;
-  width: 60px;
-  padding: 10px;
-  border-radius: 5%;
+  margin-top: 35px;
+  margin-left: 92%;
+  height: 22px;
 }
 
-#nav-right :hover{
-  border-radius: 30%;
-  padding: 30px;
-}
-
-.nav-buttons-div{
-  position: absolute;
-  display: block;
-  width: 18%;
-  margin-left: 5%;
-  height: 25%;
-  padding: 5px;
-  border: 3px solid rgba(100, 98, 98, 0.556);
-}
 
 @media screen and (max-width: 600px) {
   .nav-buttons-div{
