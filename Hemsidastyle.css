@@ -18,7 +18,7 @@ body {
 
 @media screen and (max-width: 580px) {
   .nav-container{
-    height: 20vh;
+    height: 26vh;
   }
   #Logoimage{   /* varför faaaan fungerar inte dehär*/
     height: 20vh;

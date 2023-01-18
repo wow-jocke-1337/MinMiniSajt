@@ -9,33 +9,81 @@
   </head>
 
 
-<body>
+  <body>
 
-  <div class="nav-container">
-    <div class="nav-buttons-div">
-    <a href="https://www.google.com/maps/search/mcdonalds/@59.4367597,17.9632129,11z/data=!3m1!4b1"target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-    <a href="https://www.facebook.com/mcdonaldssverige"target="_blank"><i class="fa-brands fa-facebook nav-icon"></i></a>
-    <a href="https://www.youtube.com/watch?v=SvOx7tA_Cv8"target="_blank"><i class="fa-brands fa-youtube"></i></a>
-    <a href="https://www.instagram.com/mcdonaldssverige/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.tiktok.com/@mcdonalds"target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-    <div class="Logobar"></div>
-    <img id="logoimage" src="BBC logo.png">
-    
-    <div class="dropdown">
+    <div class="nav-container">
+      <div class="nav-buttons-div">
+      <a href="https://www.google.com/maps/search/mcdonalds/@59.4367597,17.9632129,11z/data=!3m1!4b1"target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+      <a href="https://www.facebook.com/mcdonaldssverige"target="_blank"><i class="fa-brands fa-facebook nav-icon"></i></a>
+      <a href="https://www.youtube.com/@mcdonaldsse"target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.instagram.com/mcdonaldssverige/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@mcdonalds"target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      <div class="Logobar"></div>
+      <img id="logoimage" src="BBC logo.png">
+      
       <button class="nav-container a"id="nav-right" onclick= "dropdownclickfunktion()"> <i id="baricon"class="fa-solid fa-bars"></i></button>
-      <div id="myDropdown"class="dropdown-content">
-        <a href="Hemsida.html"> <i class="fa-solid fa-house"></i> Home</a>
-        <a href="#"><i class="fa-regular fa-user"></i>Login</a>
-        <a href="Info.html"target="blank"><i class="fa-solid fa-info"></i>info</a>
-        <a href="#"><i class="fa-solid fa-hand"></i>help</a>
-        <a href="Rate-us.html">Rate us<i class="fa-regular fa-star"></i></a>
+      <div class="dropdown">
+        <div id="myDropdown"class="dropdown-content">
+          <a href="Hemsida.html"> <i class="fa-solid fa-house"></i> Home</a>
+          <a href="#" onclick="document.getElementById('id01').style.display='block'"> <i class="fa-regular fa-user"></i> Login</a>
+          <a href="Info.html"target="blank"><i class="fa-solid fa-info"></i>info</a>
+          <a href="https://www.youtube.com/watch?v=SvOx7tA_Cv8"target="_blank"><i class="fa-solid fa-hand"></i>help</a>
+          <a href="Rate-us.html">Rate us<i class="fa-regular fa-star"></i></a>
+        </div>
+      </div>
+  
+        <div class="formdiv">
+          <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="Avatar.png" alt="Avatar" class="avatar">
+              </div>
+          
+              <div class="formcontainer">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="formcontainer" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+  
+          </div>
+        </div>
+    </div>
+  
+    <div class="row">
+      <div class="column side">
+        <h2>Side</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      </div>
+      
+      <div class="column middle">
+        <h2>Main Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      </div>
+      
+      <div class="column side">
+        <h2>Side</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
       </div>
     </div>
-    
-  </div>
 
-<div> </div>
+
 
 <p style="padding-top: 3000px;"> bög </p>
 
@@ -43,23 +91,45 @@
 
 
 <script>
-  function dropdownclickfunktion() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('#baricon')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementsByClassName("nav-container").style.height = "15vh";
+    } 
+    else {
+      document.getElementsByClassName("nav-container").style.height = "25vh";
+    }
+  }
+
+
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+    function dropdownclickfunktion() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('#baricon')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
       }
     }
   }
-}
 </script>
 </html>
 
