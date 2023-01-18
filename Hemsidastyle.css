@@ -6,21 +6,22 @@ body {
 
 .nav-container{
   background-color: rgb(255, 255, 255);
-  display: flex;
+  display: block;
   position: sticky;
   top: 0px;
-  height: 20vh;
+  height: 25vh;
+  width: 100%;
   padding: 5px 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .nav-buttons-div{
   position: absolute;
-  display: block;
-  width: 14%;
+  display: inline-flex;
+  width: 20%;
   margin-top: 20px;
   margin-left: 5%;
-  height: 25%;
-  padding: 5px;
+  padding: 10px;
 }
 
 .nav-buttons-div a{
@@ -41,6 +42,40 @@ body {
   color: rgba(232, 230, 230, 0.927);
 }
 
+.Logobar{
+  display: block;
+  position: absolute;
+  border: 3px solid rgba(100, 98, 98, 0.556);
+  width: 90%;
+  top: 12vh;
+  margin-left: 5%;
+}
+
+#logoimage{
+  height: 25vh;
+  top: 1vh;
+  position: absolute;
+  margin-left: 42%;
+}
+
+
+
+#nav-right{
+  float: right;
+  margin-left: auto;
+  margin-right: 6%;
+  margin-top: 6vh;
+  position: relative;
+  display: block;
+  height: 27px;
+  width: 27px;
+  border: none;
+  transition: all 0.8s;
+  border-radius: 20%;
+  padding: 6px 6px;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%);
+}
+
 #nav-right:hover{
   background-color: rgba(17, 16, 16, 0.929);
   color: white;
@@ -48,26 +83,15 @@ body {
 
 #baricon{ font-size: 130%; }
 
-#nav-right{
-  margin-top: 35px;
-  margin-left: 92%;
-  height: 27px;
-  width: 27px;
-  border: none;
-  transition: all 0.8s;
-  border-radius: 20%;
-  padding: 6px 6px;
-}
-
-
-
 
 .dropdown {
   height: 22px;
-  margin-left: 90%;
-  position: relative;
+  width: 22px;
+  margin-top: 13vh;
+  position: absolute;
   display: inline-block;
   transition: all 0.5s;
+  right: 15vh;
 }
 
 .dropdown-content {
@@ -110,21 +134,7 @@ body {
 
 }
 
-.Logobar{
-  display: block;
-  position: absolute;
-  border: 3px solid rgba(100, 98, 98, 0.556);
-  width: 89%;
-  top: 10vh;
-  margin-left: 5%;
-}
 
-#logoimage{
-  width: 23vh;
-  top: 1vh;
-  position: absolute;
-  margin-left: 44%;
-}
 
 
 
