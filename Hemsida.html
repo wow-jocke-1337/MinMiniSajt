@@ -33,41 +33,55 @@
       </div>
     </div>
 
-    <div class="formdiv">
+      <div class="formdiv">
+        <div id="id01" class="modal">
 
-      <div id="id01" class="modal">
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="Avatar.png" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="formcontainer">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="formcontainer" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
 
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-            <img src="Avatar.png" alt="Avatar" class="avatar">
-          </div>
-      
-          <div class="formcontainer">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-      
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-              
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-      
-          <div class="formcontainer" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-          </div>
-        </form>
-
+        </div>
       </div>
-
-    </div>
-
   </div>
 
+  <div class="row">
+    <div class="column side">
+      <h2>Side</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+    </div>
+    
+    <div class="column middle">
+      <h2>Main Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+    
+    <div class="column side">
+      <h2>Side</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+    </div>
+  </div>
 
 
 <p style="padding-top: 3000px;"> bög </p>

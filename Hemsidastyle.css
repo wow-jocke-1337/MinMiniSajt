@@ -1,6 +1,7 @@
 body {
   background-image: linear-gradient(to bottom left, rgb(255, 255, 255), rgb(20, 20, 20) );
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 .nav-container{
@@ -12,6 +13,7 @@ body {
   padding: 5px 5px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   transition: all 0.4s;
+  opacity: 85%;
 }
 
 @media screen and (max-width: 580px) {
@@ -144,6 +146,32 @@ body {
 
 
 
+
+
+.column {
+  float: left;
+}
+
+.column.side {
+  width: 25%;
+}
+
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
 
 
 
