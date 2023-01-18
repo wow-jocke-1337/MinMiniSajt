@@ -23,10 +23,10 @@
     <img id="logoimage" src="BBC logo.png">
     
     <div class="dropdown">
-      <button id="nav-right" > <i id="infoicon"class="fa-regular fa-circle-question"></i></button>
+      <button class="nav-container a"id="nav-right" onclick="myFunction()"> <i id="infoicon"class="fa-solid fa-bars"></i></button>
       <div class="dropdown-content">
-        <a href="#">Login</a>
-        <a href="#">info</a>
+        <a href="#"target="blank"><i class="fa-regular fa-user"></i>Login</a>
+        <a href="#"target="blank">info</a>
         <a href="#">help</a>
       </div>
     </div>
@@ -38,7 +38,25 @@
 <p style="padding-top: 3000px;"> bög </p>
 
 </body>
+<script>
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </html>
 
 
