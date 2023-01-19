@@ -292,3 +292,41 @@ img.avatar {
   from {transform: scale(0)} 
   to {transform: scale(1)}
 }
+
+
+
+.rate-thumb{
+  float: left;
+  top: 40%;
+  width: 35%;
+  height: 50vh;
+  font-size: 30vh;
+  margin: 10%;
+  border-radius: 10%;
+  margin-right: 0;
+  color: #fff;
+  background-color: #4CAF50;
+  box-shadow: 0 9px #999;
+  transition: all 1s;
+}
+
+.rate-thumb i{
+  color: rgb(29, 232, 15);
+}
+
+#thumbs-down{
+  background-color: #ba0202;
+  float: right;
+  margin-right: 10%;
+  margin-left: 0;
+}
+
+
+
+.rate-thumb:hover {background-color: #3e8e41}
+
+.rate-thumb :active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
